@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workbook | AniMottos</title>
+
+  <!-- Favicon & Brand Meta -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <!-- Theme Colors for Browsers -->
+  <meta name="theme-color" content="#4BA3C3">
+  <meta name="msapplication-TileColor" content="#4BA3C3">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Social / Search Preview -->
+  <meta property="og:title" content="AniMottos – Wear Your Character on Your Sleeve">
+  <meta property="og:description"
+    content="Discover your inner animal, embrace your values, and wear your motto with pride.">
+  <meta property="og:image" content="favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com/">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
+
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .animal-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px 40px;
+      /* more space between cards */
+      justify-items: center;
+      align-items: start;
+      margin-top: 30px;
+      padding: 0 20px;
+      /* adds breathing space on the sides */
+    }
+
+    .animal-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .animal-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .animal-img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 10px;
+      transition: transform 0.2s ease;
+    }
+
+    .animal-card:hover .animal-img {
+      transform: scale(1.05);
+    }
+
+    .animal-name {
+      font-family: 'Carter One', cursive;
+      color: #4BA3C3;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .animal-trait {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Navigation -->
+    <nav class="navigation">
+      <div class="brand">
+        <img src="image/logoTextSmall.png" alt="AniMottos Logo" class="nav-logo">
+      </div>
+
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links">
+        <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a class="nav-link" href="about.html"><i class="fa-solid fa-compass"></i> About</a>
+        <a class="nav-link active" href="workbook.html"><i class="fa-solid fa-book-open"></i> Workbook</a>
+        <a class="nav-link" href="quiz.html"><i class="fa-solid fa-puzzle-piece"></i> Quiz</a>
+        <a class="nav-link" href="shop.html"><i class="fa-solid fa-tshirt"></i> Shop</a>
+      </div>
+    </nav>
+
+    <!-- Workbook Section -->
+    <div class="section-card">
+      <h2 class="section-title">Character Development Workbook</h2>
+      <p class="section-subtitle">Grow Your Character, One Week at a Time</p>
+
+      <div
+        style="background: #A9957B; border-radius: 20px; padding: 40px; text-align: center; margin: 30px 0; color: white;">
+        <h3 style="font-size: 28px; font-family: 'Carter One', cursive; margin-bottom: 20px; color: white;">
+          Student Workbook Preview
+        </h3>
+        <div class="workbook-intro">
+          <p>
+            The AniMottos Workbook helps children explore timeless values through stories, journaling, art, and
+            reflection.
+            Each animal mentor invites students to grow in curiosity, creativity, responsibility, courage, honesty, and
+            integrity—learning not just what these values mean, but how to live them every day.
+            Along the way, children gain the confidence to express their character with pride and share who they’re
+            becoming with the world.
+          </p>
+        </div>
+
+        <!-- Updated Animal Grid -->
+        <div class="animal-grid">
+          <a href="week1-otter.html" class="animal-card">
+            <img src="image/standard/Otter.webp" alt="Otter" class="animal-img">
+            <div class="animal-name">Week 1: Curiosity</div>
+            <div class="animal-trait">Otter Adventures</div>
+          </a>
+
+          <a href="week2-chameleon.html" class="animal-card">
+            <img src="image/standard/Chameleon.webp" alt="Chameleon" class="animal-img">
+            <div class="animal-name">Week 2: Creativity</div>
+            <div class="animal-trait">Chameleon Colors</div>
+          </a>
+
+          <a href="week3-squirrel.html" class="animal-card">
+            <img src="image/standard/Squirrel.webp" alt="Squirrel" class="animal-img">
+            <div class="animal-name">Week 3: Responsibility</div>
+            <div class="animal-trait">Squirrel Planning</div>
+          </a>
+
+          <a href="week4-lion.html" class="animal-card">
+            <img src="image/standard/Lion.webp" alt="Lion" class="animal-img">
+            <div class="animal-name">Week 4: Courage</div>
+            <div class="animal-trait">Lion’s Heart</div>
+          </a>
+
+          <a href="week5-eagle.html" class="animal-card">
+            <img src="image/standard/Eagle.webp" alt="Eagle" class="animal-img">
+            <div class="animal-name">Week 5: Honesty</div>
+            <div class="animal-trait">Eagle Vision</div>
+          </a>
+
+          <a href="week6-bear.html" class="animal-card">
+            <img src="image/standard/Bear.webp" alt="Bear" class="animal-img">
+            <div class="animal-name">Week 6: Integrity</div>
+            <div class="animal-trait">Bear Strength</div>
+          </a>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin: 30px 0;">
+        <a class="cta-button cta-primary" style="font-size: 20px; padding: 20px 40px;" href="#">
+          <i class="fa-solid fa-download"></i> Download Sample Pages
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-message">Stay Curious. Be Kind. Shine Bright!</div>
+      <p>Connect with the AniMottos community and share your character journey</p>
+
+      <div class="social-links">
+        <a href="#" class="social-link" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="social-link" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="social-link" target="_blank" aria-label="Twitter / X">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="#" class="social-link" target="_blank" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const burger = document.querySelector(".hamburger");
+      const nav = document.querySelector(".nav-links");
+      const links = document.querySelectorAll(".nav-link");
+
+      burger.addEventListener("click", () => {
+        burger.classList.toggle("active");
+        nav.classList.toggle("open");
+      });
+
+      links.forEach(link => {
+        link.addEventListener("click", () => {
+          burger.classList.remove("active");
+          nav.classList.remove("open");
+        });
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>
