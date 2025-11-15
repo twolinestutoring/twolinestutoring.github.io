@@ -419,7 +419,7 @@ body::before {
   color: white;
   width: 90%;
   /* responsive width */
-  max-width: 750px;
+  max-width: 700px;
   /* prevents it from stretching too wide */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
