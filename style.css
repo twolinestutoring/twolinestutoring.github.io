@@ -20,6 +20,11 @@ body {
   /* padding-top: 50px; */
 }
 
+body, .section-card {
+  background: white !important;
+}
+
+
 body::before {
   content: "";
   position: fixed;
@@ -125,26 +130,29 @@ body::before {
 }
 
 /* CTA Buttons */
-/* CTA Section Card */
-.cta-section {
-  background: #ffffff;
-  padding: 40px 20px;
-  text-align: center;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  border-radius: 20px;
-  width: 90%;
-  max-width: 900px;
-  margin: -40px auto 60px; /* pulls it slightly over hero */
-  position: relative;
-  z-index: 5;
-}
-
-/* Ensure CTA buttons line up properly */
-.cta-section .cta-buttons {
+.standalone-cta {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 20px;
+  padding: 40px 0;   /* pushes them downward nicely */
+  background: white;
+}
+
+/* Make CTA Buttons consistent */
+.standalone-cta .cta-button {
+  padding: 15px 32px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.25s ease;
+}
+
+/* Hover lift */
+.standalone-cta .cta-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
 .cta-buttons {
@@ -164,10 +172,6 @@ body::before {
   transition: all 0.3s ease-in-out;
 }
 
-.cta-button:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-}
 
 /* Button color styles */
 .cta-primary {
