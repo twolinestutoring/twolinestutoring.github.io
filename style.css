@@ -125,6 +125,28 @@ body::before {
 }
 
 /* CTA Buttons */
+/* CTA Section Card */
+.cta-section {
+  background: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  border-radius: 20px;
+  width: 90%;
+  max-width: 900px;
+  margin: -40px auto 60px; /* pulls it slightly over hero */
+  position: relative;
+  z-index: 5;
+}
+
+/* Ensure CTA buttons line up properly */
+.cta-section .cta-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .cta-buttons {
   display: flex;
   justify-content: center;
@@ -140,6 +162,11 @@ body::before {
   text-decoration: none;
   font-size: 1rem;
   transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 /* Button color styles */
