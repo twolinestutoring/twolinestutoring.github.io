@@ -434,10 +434,6 @@ body::before {
   line-height: 1.5;
 }
 
-.content-note {
-  font-style: italic;
-  margin-top: 12px;
-}
 .step-number {
   background: rgba(255, 255, 255, 0.2);
   width: 40px;
