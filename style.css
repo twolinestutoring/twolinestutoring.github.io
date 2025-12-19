@@ -403,7 +403,7 @@ body::before {
   position: relative;
 }
 
-.journey-step::after {
+/* .journey-step::after {
   content: '→';
   position: absolute;
   right: -15px;
@@ -415,7 +415,7 @@ body::before {
 
 .journey-step:last-child::after {
   display: none;
-}
+} */
 
 .step-number {
   background: rgba(255, 255, 255, 0.2);
