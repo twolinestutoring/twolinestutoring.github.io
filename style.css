@@ -417,6 +417,15 @@ body::before {
   display: none;
 } */
 
+.closing-line {
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.philosophy-note {
+  font-style: italic;
+  margin-top: 12px;
+}
 .step-number {
   background: rgba(255, 255, 255, 0.2);
   width: 40px;
