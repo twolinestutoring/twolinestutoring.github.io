@@ -371,7 +371,7 @@ body::before {
 .section-card {
   background: #fff;
   width: 100%;
-  padding: 80px 10%;
+  padding: 50px 10%;
   text-align: center;
 }
 
@@ -434,7 +434,7 @@ body::before {
   line-height: 1.5;
 }
 
-.step-number {
+/* .step-number {
   background: rgba(255, 255, 255, 0.2);
   width: 40px;
   height: 40px;
@@ -444,7 +444,7 @@ body::before {
   justify-content: center;
   margin: 0 auto 15px;
   font-weight: bold;
-}
+} */
 
 
 /* === QUIZ STYLES === */
